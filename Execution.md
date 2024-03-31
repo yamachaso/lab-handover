@@ -29,6 +29,9 @@ $ roslaunch myrobot_moveit left_denso_robot_control.launch
 $ roslaunch cart_control bringup.launch
 $ roslaunch myrobot_moveit auto_planning.launch
 ```
+
+なお、注意点として`bringup.launch`を起動してから`right_denso_robot_control.launch`および`left_denso_robot_control.launch`を起動するまでに時間が大きく空いてしまうとMoveItの方で実機の関節角度を捕捉できない場合がある。5秒以内が目安。
+
 ### noetic側のコマンド
 ```
 $ make noetic
@@ -39,3 +42,8 @@ $ roslaunch detect ar_track_alver.launch
 $ roslaunch detect bringup.launch
 ```
 
+なお、こちらの`bringup.launch`はmelodic側の`auto_planning.launch`の実行画面で
+```
+movegroup load : SUCCESS
+```
+が表示されたのを確認してから起動する。

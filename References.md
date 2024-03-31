@@ -9,3 +9,5 @@
 - [Controller と HardwareInterface との間の処理の仕組み（2. RobotHWSimのプラグインについて）](https://qiita.com/MoriKen/items/5cab7436c1b36c25e0ce)
 - [Controller と HardwareInterface との間の処理の仕組み（3. Controllerについて）](https://qiita.com/MoriKen/items/c29f653d03baffe5f0e2)
 
+# ロボット制御用ノードを自作する時に参考になるリポジトリ
+- [minimum_ros_control](https://github.com/yoneken/minimum_ros_control)
